@@ -34,6 +34,23 @@ a{
   padding: 10px;
 }
 #wrapper > main{
+  width: 100%;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+#wrapper > main .main-content-wrapper{
+
+}
+.banner{
+
+}
+.banner-title{
+  margin: 25px 0;
+}
+.banner-title h1{
+
+}
+.banner-text{
 
 }
 #wrapper > footer{

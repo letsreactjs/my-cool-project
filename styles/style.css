@@ -33,6 +33,33 @@ a{
   color: #2980b9;
   padding: 10px;
 }
+#mobile-menu-button{
+  display: none;
+}
+/************START MOBILE HEADER STYLES*******************/
+@media(max-width: 600px){
+  #wrapper > header{
+    flex-flow: column;
+    height: auto;
+    align-items: flex-start;
+  }
+  #mobile-menu-button{
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    display: block;
+  }
+  #wrapper > header > nav{
+    display: none;
+    flex-flow: column;
+  }
+  #wrapper > header > nav.toggled{
+    display: flex;
+  }
+}
+/************END MOBILE HEADER STYLES*******************/
 #wrapper > main{
   width: 100%;
   max-width: 1000px;
@@ -52,6 +79,22 @@ a{
 }
 .banner-text{
 
+}
+#contact-form{
+  display: flex;
+  flex-flow: row wrap;
+}
+#contact-form .form-item{
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  margin: 15px 0;
+}
+#contact-form .form-item input,
+#contact-form .form-item textarea{
+  background: #ddd;
+  padding: 10px;
+  border: none;
 }
 #wrapper > footer{
 
